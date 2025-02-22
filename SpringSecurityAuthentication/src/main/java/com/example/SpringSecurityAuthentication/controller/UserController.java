@@ -23,7 +23,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping("/create")
+    @PostMapping("/register")
     public ResponseEntity<?> addUser(@RequestBody UserModel userModel) {
         if (userModel == null) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Username and Password are required");
