@@ -27,7 +27,7 @@ public class UserService {
     public UserModel createUser(UserModel userModel) {
 
 
-        userModel.setPassword(encoder.encode(userModel.getPassword()));
+        userModel.setPassword(encoder.encode(userModel.getPassword() ));
 
         if(userModel == null ) {
             return null;
